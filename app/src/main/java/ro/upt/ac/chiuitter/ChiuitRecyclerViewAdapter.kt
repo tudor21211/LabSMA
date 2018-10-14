@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_chiuit.view.*
 
 class ChiuitRecyclerViewAdapter(
-        private val chiuitList: List<Chiuit>,
+        private val chiuitList: MutableList<Chiuit>,
         private val onClick: (Chiuit) -> (Unit))
     : RecyclerView.Adapter<ChiuitRecyclerViewAdapter.ChiuitViewHolder>() {
 
