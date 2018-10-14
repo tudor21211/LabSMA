@@ -68,7 +68,7 @@ class HomeActivity : AppCompatActivity() {
             // TODO 6: Check if text is not null or empty, then set the new "chiuit" content.
 
 
-            TODO("13. Instantiate a new chiuit object that add it to the adapter")
+            TODO("13. Instantiate a new chiuit object, then add it to the adapter")
         }
     }
 
