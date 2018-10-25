@@ -5,16 +5,14 @@ import ro.upt.ac.chiuitter.domain.Chiuit
 
 class DbChiuitStore(private val appDatabase: AppDatabase) : ChiuitRepository {
 
-    override fun getAll(): List<Chiuit> {
+    override suspend fun getAll(): List<Chiuit> {
         return appDatabase.chiuitDao().getAll().map { it.toDomainModel() }
     }
 
-    override fun addChiuit(chiuit: Chiuit) {
-        TODO ("Insert the new entry")
+    override suspend fun addChiuit(chiuit: Chiuit) {
     }
 
-    override fun removeChiuit(chiuit: Chiuit) {
-        TODO ("Insert the specified entry")
+    override suspend fun removeChiuit(chiuit: Chiuit) {
     }
 
 

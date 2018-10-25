@@ -9,8 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.view_home.*
 import ro.upt.ac.chiuitter.R
-import ro.upt.ac.chiuitter.data.database.DbChiuitStore
-import ro.upt.ac.chiuitter.data.database.RoomDatabase
+import ro.upt.ac.chiuitter.data.firebase.FirebaseChiuitStore
 import ro.upt.ac.chiuitter.viewmodel.HomeViewModel
 import ro.upt.ac.chiuitter.viewmodel.HomeViewModelFactory
 
@@ -25,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
 
         fab_add.setOnClickListener { composeChiuit() }
 
-        val factory = HomeViewModelFactory(DbChiuitStore(RoomDatabase.getDb(this)))
+        val factory = HomeViewModelFactory(FirebaseChiuitStore())
         viewModel = ViewModelProviders.of(this, factory).get(HomeViewModel::class.java)
 
         initList()
@@ -37,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         viewModel.chiuitsLiveData.observe(this, Observer { chiuts ->
-            TODO("Instantiate an adapter with the received list and assign it to recycler view")
+            TODO("Instantiate an adapter with the received items and assign it to recycler view")
         })
 
         viewModel.fetchChiuits()

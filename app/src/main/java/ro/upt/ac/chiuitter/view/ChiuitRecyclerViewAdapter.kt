@@ -34,7 +34,7 @@ class ChiuitRecyclerViewAdapter(
 
         init {
             itemView.ibt_share.setOnClickListener { onShareClick(chiuitList[adapterPosition]) }
-            TODO("Trigger delete callback same as for share")
+//            TODO("Trigger delete callback same as for share")
         }
 
         fun bind(chiuit: Chiuit) {

@@ -11,10 +11,5 @@ interface ChiuitDao {
     fun getAll(): List<ChiuitEntity>
 
 
-    // TODO("Define insert")
-
-
-    // TODO("Define delete")
-
 
 }

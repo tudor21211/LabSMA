@@ -5,7 +5,7 @@ import ro.upt.ac.chiuitter.domain.Chiuit
 
 class DummyChiuitStore : ChiuitRepository {
 
-    override fun getAll(): List<Chiuit> =
+    override suspend fun getAll(): List<Chiuit> =
             listOf(
                     Chiuit(0,"Ada-mi Doamne, timpu-odata\n" +
                             "Sa-mi vad tara mea bogata,\n" +
@@ -38,9 +38,9 @@ class DummyChiuitStore : ChiuitRepository {
                     Chiuit(5,"Frunză verde lemn uscat\n" +
                             "de strigat m-am săturat"))
 
-    override fun addChiuit(chiuit: Chiuit) {
+    override suspend fun addChiuit(chiuit: Chiuit) {
     }
 
-    override fun removeChiuit(chiuit: Chiuit) {
+    override suspend fun removeChiuit(chiuit: Chiuit) {
     }
 }
