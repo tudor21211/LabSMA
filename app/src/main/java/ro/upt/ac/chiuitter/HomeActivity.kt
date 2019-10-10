@@ -17,8 +17,8 @@ class HomeActivity : AppCompatActivity() {
     }
 
     /*
-    Defines text sharing/sending *implicit* intent, opens the application chooser menu
-    and then starts a new activity which supports sharing/sending text.
+    Defines text sharing/sending *implicit* intent, opens the application chooser menu,
+    and starts a new activity which supports sharing/sending text.
      */
     private fun shareChiuit(text: String) {
         val sendIntent = Intent().apply {
@@ -41,8 +41,7 @@ class HomeActivity : AppCompatActivity() {
 
 
         // TODO 3: Start a new activity with the previously defined intent.
-        // Not only we are using the explicit approach, but we start a new activity
-        // that we expect to return the text as result.
+        // We start a new activity that we expect to return the acquired text as the result.
 
     }
 
