@@ -40,7 +40,7 @@ class HomeActivity : AppCompatActivity() {
             TODO("Instantiate an adapter with the received list and assign it to recycler view")
         })
 
-        viewModel.fetchChiuits()
+        viewModel.retrieveChiuits()
     }
 
     /*

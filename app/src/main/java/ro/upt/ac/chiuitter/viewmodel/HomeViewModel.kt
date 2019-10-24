@@ -9,19 +9,19 @@ class HomeViewModel(private val chiuitRepository: ChiuitRepository) : ViewModel(
 
     val chiuitsLiveData = MutableLiveData<List<Chiuit>>()
 
-    fun fetchChiuits() {
+    fun retrieveChiuits() {
         val chiuits = chiuitRepository.getAll()
         chiuitsLiveData.postValue(chiuits)
     }
 
     fun addChiuit(description: String) {
         chiuitRepository.addChiuit(Chiuit(System.currentTimeMillis(), description))
-        fetchChiuits()
+        retrieveChiuits()
     }
 
     fun removeChiuit(chiuit: Chiuit) {
         chiuitRepository.removeChiuit(chiuit)
-        fetchChiuits()
+        retrieveChiuits()
     }
 
 }
