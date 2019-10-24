@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.view_home.*
 import ro.upt.ac.chiuitter.R
-import ro.upt.ac.chiuitter.data.database.DbChiuitStore
+import ro.upt.ac.chiuitter.data.database.ChiuitDbStore
 import ro.upt.ac.chiuitter.data.database.RoomDatabase
 import ro.upt.ac.chiuitter.viewmodel.HomeViewModel
 import ro.upt.ac.chiuitter.viewmodel.HomeViewModelFactory
@@ -25,7 +25,7 @@ class HomeActivity : AppCompatActivity() {
 
         fab_add.setOnClickListener { composeChiuit() }
 
-        val factory = HomeViewModelFactory(DbChiuitStore(RoomDatabase.getDb(this)))
+        val factory = HomeViewModelFactory(ChiuitDbStore(RoomDatabase.getDb(this)))
         viewModel = ViewModelProviders.of(this, factory).get(HomeViewModel::class.java)
 
         initList()
