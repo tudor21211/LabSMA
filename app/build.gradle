@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
 
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "ro.upt.ac.chiuitter"
@@ -27,7 +27,7 @@ android {
 
 dependencies {
     def lifecycle_version = "2.0.0"
-    def room_version = "1.1.1"
+    def room_version = "2.4.3"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -38,11 +38,10 @@ dependencies {
 
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
 
-    implementation "android.arch.persistence.room:runtime:$room_version"
-    kapt "android.arch.persistence.room:compiler:$room_version"
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0")
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
     implementation platform('com.google.firebase:firebase-bom:29.0.0')
     implementation 'com.google.firebase:firebase-database-ktx'
-
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0")
 }
