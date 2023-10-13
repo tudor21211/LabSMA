@@ -1,7 +1,7 @@
 package ro.upt.ac.chiuitter.data.database
 
-import ro.upt.ac.chiuitter.domain.ChiuitRepository
 import ro.upt.ac.chiuitter.domain.Chiuit
+import ro.upt.ac.chiuitter.domain.ChiuitRepository
 
 class ChiuitDbStore(private val appDatabase: AppDatabase) : ChiuitRepository {
 
@@ -10,11 +10,11 @@ class ChiuitDbStore(private val appDatabase: AppDatabase) : ChiuitRepository {
     }
 
     override fun addChiuit(chiuit: Chiuit) {
-        TODO ("Insert the new entry")
+        // TODO 10: Add the new chiuit by invoking the DAO; make sure to use the designated mapper.
     }
 
     override fun removeChiuit(chiuit: Chiuit) {
-        TODO ("Insert the specified entry")
+        // TODO 13: Remove the chiuit by invoking the DAO; make sure to use the designated mapper.
     }
 
 

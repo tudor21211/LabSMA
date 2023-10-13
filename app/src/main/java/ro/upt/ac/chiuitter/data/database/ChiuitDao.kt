@@ -10,11 +10,8 @@ interface ChiuitDao {
     @Query("SELECT * FROM chiuits")
     fun getAll(): List<ChiuitEntity>
 
+    // TODO 11: Define the insert operation.
 
-    // TODO("Define insert")
-
-
-    // TODO("Define delete")
-
+    // TODO 14: Define the delete operation.
 
 }
