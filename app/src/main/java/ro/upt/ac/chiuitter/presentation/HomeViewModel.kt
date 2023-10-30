@@ -1,4 +1,4 @@
-package ro.upt.ac.chiuitter
+package ro.upt.ac.chiuitter.presentation
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

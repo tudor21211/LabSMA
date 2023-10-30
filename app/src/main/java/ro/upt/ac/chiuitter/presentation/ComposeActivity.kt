@@ -29,7 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import ro.upt.ac.chiuitter.R
 
-// TODO 4: Make sure you have the Android component specified in Manifest.
+
 class ComposeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

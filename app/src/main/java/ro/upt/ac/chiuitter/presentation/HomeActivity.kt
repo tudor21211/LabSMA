@@ -1,5 +1,6 @@
 package ro.upt.ac.chiuitter.presentation
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Send
@@ -20,6 +22,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -29,29 +32,34 @@ import androidx.compose.ui.unit.dp
 import ro.upt.ac.chiuitter.R
 import ro.upt.ac.chiuitter.data.database.ChiuitDbStore
 import ro.upt.ac.chiuitter.data.database.RoomDatabase
+import ro.upt.ac.chiuitter.data.dummy.DummyChiuitStore
 import ro.upt.ac.chiuitter.domain.Chiuit
+import ro.upt.ac.chiuitter.presentation.HomeViewModel
+import androidx.compose.foundation.lazy.items
+import androidx.compose.runtime.getValue
+import ro.upt.ac.chiuitter.data.database.AppDatabase
 
 class HomeActivity : AppCompatActivity() {
 
+    private val chiuitText = mutableStateOf("")
     private lateinit var viewModel: HomeViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = HomeViewModel(ChiuitDbStore(RoomDatabase.getDb(this)))
-        setContent { HomeScreen(viewModel) }
+        setContent { HomeScreen() }
     }
 
     @Composable
-    private fun HomeScreen(viewModel: HomeViewModel) {
-        val chiuitListState = viewModel.chiuitListState.collectAsState()
-
+    private fun HomeScreen() {
         Surface(color = Color.White) {
             Box(modifier = Modifier.fillMaxSize()) {
-                // TODO 7: Use a vertical list that composes and displays only the visible items.
-
-                // TODO 8: Make use of Compose DSL to describe the content of the list and make sure
-                // to instantiate a [ChiuitListItem] for every item in [chiuitListState.value].
-
+                val chiuitList by viewModel.chiuitListState.collectAsState() //LINIA NECESARA PT UPDATEUL UI-ULUI
+                LazyColumn {
+                    items(chiuitList) {
+                        ChiuitListItem(chiuit = it)
+                    }
+                }
 
                 AddFloatingButton(
                     modifier = Modifier
@@ -78,7 +86,7 @@ class HomeActivity : AppCompatActivity() {
                 )
                 Button(
                     modifier = Modifier
-                        .weight(0.2f)
+                        .weight(0.3f)
                         .padding(8.dp),
                     onClick = { shareChiuit(chiuit.description) }) {
                     Icon(
@@ -87,6 +95,12 @@ class HomeActivity : AppCompatActivity() {
                     )
                 }
                 // TODO 12: Add a new button that has the purpose to delete a chiuit.
+                Button(
+                    modifier = Modifier
+                        .weight(0.2f)
+                        .padding(8.dp),
+                    onClick = { viewModel.removeChiuit(chiuit) }) {
+                }
             }
         }
     }
@@ -110,7 +124,16 @@ class HomeActivity : AppCompatActivity() {
      */
     private fun shareChiuit(text: String) {
         val sendIntent = Intent().apply {
-            // TODO 1: Configure to support text sending/sharing and then attach the text as intent's extra.
+
+            val sendIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, text)
+                type = "text/plain"
+            }
+
+            val intentChooser = Intent.createChooser(sendIntent, "")
+
+            startActivity(intentChooser)
 
 
         }
@@ -124,11 +147,11 @@ class HomeActivity : AppCompatActivity() {
     Defines an *explicit* intent which will be used to start ComposeActivity.
      */
     private fun composeChiuit() {
-        // TODO 2: Create an explicit intent which points to ComposeActivity.
 
+        val sendIntent = Intent(this, ComposeActivity::class.java)
 
-        // TODO 3: Start a new activity with the previously defined intent.
-        // We start a new activity that we expect to return the acquired text as the result.
+        startActivityForResult(sendIntent, 1213)
+
 
     }
 
@@ -141,24 +164,25 @@ class HomeActivity : AppCompatActivity() {
 
     private fun extractText(data: Intent?) {
         data?.let {
-            // TODO 5: Extract the text from result intent.
+            val extractedData = data.getStringExtra(ComposeActivity.EXTRA_TEXT)
 
+            if (!extractedData.isNullOrEmpty()) {
+                chiuitText.value = extractedData
 
-            // TODO 6: Check if text is not null or empty, then set the new "chiuitText".
-
-
-            // TODO 9': Instantiate a new chiuit object then delegate the addition to the [viewModel].
+                viewModel.addChiuit(chiuitText.value)
+                // TODO 9': Instantiate a new chiuit object then delegate the addition to the [viewModel].
+            }
         }
     }
-
-    @Preview(showBackground = true)
-    @Composable
-    private fun DefaultPreview() {
-        HomeScreen(viewModel)
-    }
+        @Preview(showBackground = true)
+        @Composable
+        fun DefaultPreview() {
+            HomeScreen()
+        }
 
     companion object {
         const val COMPOSE_REQUEST_CODE = 1213
     }
 
 }
+
