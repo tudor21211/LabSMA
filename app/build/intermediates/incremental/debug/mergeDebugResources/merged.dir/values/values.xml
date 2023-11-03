@@ -390,17 +390,15 @@
     <string name="date_range_picker_title">Select dates</string>
     <string name="default_error_message">"Invalid input"</string>
     <string name="default_popup_window_title" ns2:ignore="ExtraTranslation">"Pop-Up Window"</string>
-    <string name="default_web_client_id" translatable="false">32600395288-dap7emb3n4383tq2001osgr45c96k0kp.apps.googleusercontent.com</string>
     <string name="dialog">"Dialog"</string>
     <string name="dropdown_menu">"Dropdown menu"</string>
     <string name="edit_action_icon_content_description">Edit action icon</string>
     <string name="expanded">Expanded</string>
-    <string name="firebase_database_url" translatable="false">https://sma-2022-afc2f-default-rtdb.europe-west1.firebasedatabase.app</string>
-    <string name="gcm_defaultSenderId" translatable="false">32600395288</string>
-    <string name="google_api_key" translatable="false">AIzaSyAo8xqawQYKQT-f4qXA8g2htATwgkQoY9o</string>
-    <string name="google_app_id" translatable="false">1:32600395288:android:70ab4b4871e6da1299fd6d</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAo8xqawQYKQT-f4qXA8g2htATwgkQoY9o</string>
-    <string name="google_storage_bucket" translatable="false">sma-2022-afc2f.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">381517899880</string>
+    <string name="google_api_key" translatable="false">AIzaSyCzpX3vYn4DqwzeKkWXQeR6GGFAHbvYm98</string>
+    <string name="google_app_id" translatable="false">1:381517899880:android:13c66643bfa536b1d273dd</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCzpX3vYn4DqwzeKkWXQeR6GGFAHbvYm98</string>
+    <string name="google_storage_bucket" translatable="false">sma-proj-3c2ee.appspot.com</string>
     <string name="in_progress">In progress</string>
     <string name="indeterminate">Partially checked</string>
     <string name="m3c_bottom_sheet_pane_title">Bottom Sheet</string>
@@ -408,7 +406,7 @@
     <string name="not_selected">Not selected</string>
     <string name="off">Off</string>
     <string name="on">On</string>
-    <string name="project_id" translatable="false">sma-2022-afc2f</string>
+    <string name="project_id" translatable="false">sma-proj-3c2ee</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
     <string name="search_bar_search">Search</string>

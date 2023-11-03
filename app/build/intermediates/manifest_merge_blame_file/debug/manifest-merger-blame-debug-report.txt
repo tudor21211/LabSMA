@@ -77,52 +77,52 @@
 46        </activity>
 47
 48        <service
-48-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:9:9-15:19
-49            android:name="com.google.firebase.components.ComponentDiscoveryService"
-49-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:10:13-84
+48-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:24:9-28:63
+49            android:name="androidx.room.MultiInstanceInvalidationService"
+49-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:25:13-74
 50            android:directBootAware="true"
-50-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
-51            android:exported="false" >
-51-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:11:13-37
-52            <meta-data
-52-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:12:13-14:85
-53                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseLegacyRegistrar"
-53-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:13:17-127
-54                android:value="com.google.firebase.components.ComponentRegistrar" />
-54-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:14:17-82
-55            <meta-data
-55-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
-56                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
-56-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:30:17-120
-57                android:value="com.google.firebase.components.ComponentRegistrar" />
-57-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:31:17-82
-58            <meta-data
-58-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
-59                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-59-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:33:17-109
-60                android:value="com.google.firebase.components.ComponentRegistrar" />
-60-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:34:17-82
-61            <meta-data
-61-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\5cc091c31c1471c88ba3649b2694ff3f\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
-62                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-62-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\5cc091c31c1471c88ba3649b2694ff3f\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
-63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\5cc091c31c1471c88ba3649b2694ff3f\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
-64            <meta-data
-64-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
-65                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-65-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
-66                android:value="com.google.firebase.components.ComponentRegistrar" />
-66-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
-67        </service>
-68        <service
-68-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:24:9-28:63
-69            android:name="androidx.room.MultiInstanceInvalidationService"
-69-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:25:13-74
-70            android:directBootAware="true"
-70-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:26:13-43
-71            android:exported="false" />
-71-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:27:13-37
+50-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:26:13-43
+51            android:exported="false" />
+51-->[androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:27:13-37
+52        <service
+52-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:9:9-15:19
+53            android:name="com.google.firebase.components.ComponentDiscoveryService"
+53-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:10:13-84
+54            android:directBootAware="true"
+54-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+55            android:exported="false" >
+55-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:11:13-37
+56            <meta-data
+56-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:12:13-14:85
+57                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseLegacyRegistrar"
+57-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:13:17-127
+58                android:value="com.google.firebase.components.ComponentRegistrar" />
+58-->[com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:14:17-82
+59            <meta-data
+59-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
+60                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+60-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:30:17-120
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:31:17-82
+62            <meta-data
+62-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
+63                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+63-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:33:17-109
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+65            <meta-data
+65-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\5cc091c31c1471c88ba3649b2694ff3f\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+66                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+66-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\5cc091c31c1471c88ba3649b2694ff3f\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\5cc091c31c1471c88ba3649b2694ff3f\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+68            <meta-data
+68-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+69                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+69-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+71        </service>
 72
 73        <provider
 73-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\927e01c5cfc12b6317eb99bc333fbfbe\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39

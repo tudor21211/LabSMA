@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Send
@@ -36,9 +35,13 @@ import ro.upt.ac.chiuitter.data.dummy.DummyChiuitStore
 import ro.upt.ac.chiuitter.domain.Chiuit
 import ro.upt.ac.chiuitter.presentation.HomeViewModel
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.getValue
+import androidx.lifecycle.viewmodel.CreationExtras
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.count
+import androidx.compose.foundation.lazy.items
 import ro.upt.ac.chiuitter.data.database.AppDatabase
+import ro.upt.ac.chiuitter.data.firebase.FirebaseChiuitStore
 
 class HomeActivity : AppCompatActivity() {
 
@@ -47,7 +50,7 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = HomeViewModel(ChiuitDbStore(RoomDatabase.getDb(this)))
+        viewModel = HomeViewModel(FirebaseChiuitStore())
         setContent { HomeScreen() }
     }
 
@@ -55,9 +58,9 @@ class HomeActivity : AppCompatActivity() {
     private fun HomeScreen() {
         Surface(color = Color.White) {
             Box(modifier = Modifier.fillMaxSize()) {
-                val chiuitList by viewModel.chiuitListState.collectAsState() //LINIA NECESARA PT UPDATEUL UI-ULUI
+                val chiuitList by viewModel.chiuitListState.collectAsState(initial = emptyList()) //LINIA NECESARA PT UPDATEUL UI-ULUI
                 LazyColumn {
-                    items(chiuitList){chiuit ->
+                    items(chiuitList){
                         ChiuitListItem(chiuit = it)
                     }
                 }

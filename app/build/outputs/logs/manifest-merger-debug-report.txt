@@ -4,9 +4,9 @@ ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidMani
 INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-30:12
 INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-30:12
 INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-30:12
-MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:2:1-18:12
 MERGED from [androidx.room:room-ktx:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bdb9136217600aace83d8c3b2e9fdd38\transformed\jetified-room-ktx-2.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:2:1-18:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Tudor\.gradle\caches\transforms-3\b863190e1a5a981be34bd8a35597a5bd\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Tudor\.gradle\caches\transforms-3\85aa8ff03cd37e3ac9979adf45d5e9eb\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\Tudor\.gradle\caches\transforms-3\1f556edbb2c46b3c06afbb5b96eb7cad\transformed\jetified-material3-1.1.2\AndroidManifest.xml:17:1-22:12
@@ -88,10 +88,10 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Tudor\.gradle\ca
 application
 ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:5:5-28:19
 INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:5:5-28:19
-MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:23:5-29:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Tudor\.gradle\caches\transforms-3\5cc091c31c1471c88ba3649b2694ff3f\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:8:5-16:19
@@ -162,12 +162,12 @@ uses-sdk
 INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml
-MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.room:room-ktx:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bdb9136217600aace83d8c3b2e9fdd38\transformed\jetified-room-ktx-2.6.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-ktx:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bdb9136217600aace83d8c3b2e9fdd38\transformed\jetified-room-ktx-2.6.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Tudor\.gradle\caches\transforms-3\b863190e1a5a981be34bd8a35597a5bd\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Tudor\.gradle\caches\transforms-3\b863190e1a5a981be34bd8a35597a5bd\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Tudor\.gradle\caches\transforms-3\85aa8ff03cd37e3ac9979adf45d5e9eb\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
@@ -308,6 +308,16 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Tudor\.gradle\ca
 		INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:25:13-74
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:26:9-35:19
@@ -330,16 +340,6 @@ ADDED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gr
 		ADDED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:14:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:13:17-127
-service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:24:9-28:63
-	android:exported
-		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:27:13-37
-	tools:ignore
-		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:28:13-60
-	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:26:13-43
-	android:name
-		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:25:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\481152f41f94965a10b00a44e0d31fa2\transformed\jetified-firebase-database-20.3.0\AndroidManifest.xml:22:5-79
 	android:name

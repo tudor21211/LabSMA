@@ -15,7 +15,7 @@ class FirebaseChiuitStore : ChiuitRepository {
 
     private val database = FirebaseDatabase.getInstance().reference.child("chiuits")
 
-    override fun getAll(): Flow<List<Chiuit>> = callbackFlow {-
+    override fun getAll(): Flow<List<Chiuit>> = callbackFlow {
         val listener = object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
                 Log.e("FirebaseChiuitStore", "getAll:", p0.toException())
@@ -29,24 +29,38 @@ class FirebaseChiuitStore : ChiuitRepository {
                 //  add it to nodeValues.
 
                 for (child in children) {
-                    child.getValue(ChiuitNode::class.java)?.let { nodeValues.add(it) }
+                    val timestamp = child.child("timestamp").getValue(Long::class.java)
+                    val description = child.child("description").getValue(String::class.java)
+                    val chiuitNode = ChiuitNode(timestamp ?: 0, description ?: "")
+                    nodeValues.add(chiuitNode)
+                    println("CHILD IS $child")
                 }
 
                 val items = nodeValues.map { chiuitNode -> chiuitNode.toDomainModel() }
-
+                println("RETRIEVED FROM FIREBASE")
                 trySend(items)
             }
 
         }
-        database.addListenerForSingleValueEvent(listener)
+        database.addValueEventListener(listener) // AICI ERA GRESIT, trebuie database.addValueEventListener(listener) in loc de  database.addListenerForSingleValueEvent(listener)
 
         awaitClose { database.removeEventListener(listener) }
     }
 
     override fun addChiuit(chiuit: Chiuit) {
         // TODO 16: Insert the object into database - don't forget to use the right model.
-        var database = FirebaseDatabase.getInstance().reference.child("chiuits")
-        database.setValue(chiuit.toFirebaseModel())
+        println("ADDED TO FIREBASE")
+        var database = FirebaseDatabase.getInstance().reference
+        val chiuitsRef = database.child("chiuits").push()
+
+        // Set the value of the newly generated child node
+        chiuitsRef.setValue(chiuit.toFirebaseModel())
+            .addOnSuccessListener {
+                println("Chiuit added to Firebase")
+            }
+            .addOnFailureListener { e ->
+                println("Error adding chiuit to Firebase: $e")
+            }
     }
 
     override fun removeChiuit(chiuit: Chiuit) {
