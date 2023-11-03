@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:2:1-18:12
 MERGED from [androidx.room:room-ktx:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bdb9136217600aace83d8c3b2e9fdd38\transformed\jetified-room-ktx-2.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:17:1-31:12
@@ -86,8 +86,8 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Tudor\.gradle\ca
 	xmlns:android
 		ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:5:5-25:19
-INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:5:5-28:19
+INJECTED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.3.0] C:\Users\Tudor\.gradle\caches\transforms-3\90db37433fd785226dc36a5495c5f5a3\transformed\jetified-firebase-database-ktx-20.3.0\AndroidManifest.xml:8:5-16:19
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\Tudor\.gradle\caches\transforms-3\bbb51db3fe1fa4bb731bb57fcb094f97\transformed\room-runtime-2.6.0\AndroidManifest.xml:23:5-29:19
@@ -155,7 +155,7 @@ ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidMani
 	android:name
 		ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:17:27-74
 activity#ro.upt.ac.chiuitter.presentation.ComposeActivity
-ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:21:9-23:20
+ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:21:9-26:20
 	android:name
 		ADDED from C:\Users\Tudor\Desktop\LabSMA\repoSMA\LabSMA\app\src\main\AndroidManifest.xml:21:19-63
 uses-sdk

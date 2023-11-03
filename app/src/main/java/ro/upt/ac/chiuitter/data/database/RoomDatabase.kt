@@ -11,8 +11,8 @@ object RoomDatabase {
     fun getDb(context: Context): AppDatabase {
         if (appDatabase == null)
             appDatabase = Room.databaseBuilder(context, AppDatabase::class.java, "chiuit-db")
-                    .allowMainThreadQueries()
-                    .build()
+                .allowMainThreadQueries()
+                .build()
 
         return appDatabase!!
     }

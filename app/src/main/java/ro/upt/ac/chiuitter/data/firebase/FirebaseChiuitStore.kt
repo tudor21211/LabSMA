@@ -5,6 +5,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.getValue
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
@@ -14,7 +15,7 @@ class FirebaseChiuitStore : ChiuitRepository {
 
     private val database = FirebaseDatabase.getInstance().reference.child("chiuits")
 
-    override fun getAll(): Flow<List<Chiuit>> = callbackFlow {
+    override fun getAll(): Flow<List<Chiuit>> = callbackFlow {-
         val listener = object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
                 Log.e("FirebaseChiuitStore", "getAll:", p0.toException())
@@ -26,6 +27,10 @@ class FirebaseChiuitStore : ChiuitRepository {
                 val children = p0.children
                 // TODO 15: Iterate through the children, get the node value and
                 //  add it to nodeValues.
+
+                for (child in children) {
+                    child.getValue(ChiuitNode::class.java)?.let { nodeValues.add(it) }
+                }
 
                 val items = nodeValues.map { chiuitNode -> chiuitNode.toDomainModel() }
 
@@ -40,6 +45,8 @@ class FirebaseChiuitStore : ChiuitRepository {
 
     override fun addChiuit(chiuit: Chiuit) {
         // TODO 16: Insert the object into database - don't forget to use the right model.
+        var database = FirebaseDatabase.getInstance().reference.child("chiuits")
+        database.setValue(chiuit.toFirebaseModel())
     }
 
     override fun removeChiuit(chiuit: Chiuit) {
@@ -51,11 +58,14 @@ class FirebaseChiuitStore : ChiuitRepository {
 
             override fun onDataChange(p0: DataSnapshot) {
                 val children = p0.children
-
+                var database = FirebaseDatabase.getInstance().reference.child("chiuits")
                 // TODO 17: Iterate through the children and find the matching node,
                 //  then perform the removal.
                 for (child in children) {
-
+                    if(child.getValue(ChiuitNode::class.java)!=null && child.getValue(ChiuitNode::class.java) == chiuit.toFirebaseModel()) {
+                        val chiuitRef = database.child(child.key.toString())
+                        chiuitRef.removeValue()
+                    }
                 }
 
                 database.removeEventListener(this)

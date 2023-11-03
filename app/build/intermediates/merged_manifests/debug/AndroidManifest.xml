@@ -38,6 +38,11 @@
             </intent-filter>
         </activity>
         <activity android:name="ro.upt.ac.chiuitter.presentation.ComposeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <service
